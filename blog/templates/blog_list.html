@@ -1,0 +1,34 @@
+<!-- templates/blog_list.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <form method="get" class="input-group mb-4">
+            <input type="text" name="q" class="form-control" placeholder="Search blog posts..." value="{{ request.GET.q }}">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+
+        {% for blog in blogs %}
+        <div class="blog-card">
+            <h5 class="blog-title"><a href="{% url 'blog_detail' blog.pk %}" class="text-decoration-none">{{ blog.title }}</a></h5>
+            <small class="text-muted">By {{ blog.created_by }} • {{ blog.created_at|date:"M d, Y" }}</small>
+            <p class="blog-description mt-2">{{ blog.description|truncatechars:120 }}</p>
+        </div>
+        {% empty %}
+        <p>No blogs found.</p>
+        {% endfor %}
+
+        <nav class="mt-4">
+            <ul class="pagination justify-content-center">
+                {% if blogs.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{ blogs.previous_page_number }}">Previous</a></li>
+                {% endif %}
+                <li class="page-item disabled"><a class="page-link">Page {{ blogs.number }} of {{ blogs.paginator.num_pages }}</a></li>
+                {% if blogs.has_next %}
+                <li class="page-item"><a class="page-link" href="?page={{ blogs.next_page_number }}">Next</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</div>
+{% endblock %}

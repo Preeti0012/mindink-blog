@@ -1,0 +1,18 @@
+<!-- templates/blog_detail.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="blog">
+    <h2 class="text-primary">{{ blog.title }}</h2>
+    <p><strong>By:</strong> {{ blog.created_by }} | <strong>On:</strong> {{ blog.created_at }}</p>
+
+    <!-- Render the description as paragraphs with proper spacing -->
+    <div class="blog-description">
+        {% for paragraph in blog.description|linebreaksbr %}
+            <p>{{ paragraph }}</p>
+        {% endfor %}
+    </div>
+
+    <a href="{% url 'blog_edit' blog.pk %}" class="btn btn-warning">Edit</a>
+    <a href="{% url 'blog_delete' blog.pk %}" class="btn btn-danger">Delete</a>
+</div>
+{% endblock %}
