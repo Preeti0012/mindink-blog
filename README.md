@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 ![testing-ezgif com-speed](https://github.com/user-attachments/assets/aa29732b-c4a6-42f6-8342-5bae54b39a46)
 
 
+=======
+![testing-ezgif com-speed](https://github.com/user-attachments/assets/df3d7439-dc7d-463b-bc32-112ce7b1df69)
+
+Here is a well-formatted `README.md` file for your **Django Blog Creation API**, ready to use on GitHub:
+
+---
+>>>>>>> b2f03a1 (Update README.md)
 
 ````markdown
 # 📝 Django Blog Creation API
@@ -176,4 +184,11 @@ This project is licensed under the **MIT License**.
 ```
 
 ---
+<<<<<<< HEAD
 ```
+=======
+
+Let me know if you want this in a downloadable `.md` file or want to add badges (e.g., for license, Python version, or GitHub actions).
+```
+
+>>>>>>> b2f03a1 (Update README.md)
