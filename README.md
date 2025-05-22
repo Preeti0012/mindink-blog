@@ -5,7 +5,6 @@
 =======
 ![testing-ezgif com-speed](https://github.com/user-attachments/assets/df3d7439-dc7d-463b-bc32-112ce7b1df69)
 
-Here is a well-formatted `README.md` file for your **Django Blog Creation API**, ready to use on GitHub:
 
 ---
 >>>>>>> b2f03a1 (Update README.md)
@@ -185,10 +184,13 @@ This project is licensed under the **MIT License**.
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 =======
 
 Let me know if you want this in a downloadable `.md` file or want to add badges (e.g., for license, Python version, or GitHub actions).
+=======
+>>>>>>> 006f910 (Update README.md)
 ```
 
 >>>>>>> b2f03a1 (Update README.md)
