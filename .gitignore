@@ -1,0 +1,4 @@
+myenv/
+blog/migrations/
+blog/__pycache__/
+blog_project/__pycache__/
