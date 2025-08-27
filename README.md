@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 ![testing-ezgif com-speed](https://github.com/user-attachments/assets/aa29732b-c4a6-42f6-8342-5bae54b39a46)
 
 
-=======
-![testing-ezgif com-speed](https://github.com/user-attachments/assets/df3d7439-dc7d-463b-bc32-112ce7b1df69)
-
-
----
->>>>>>> b2f03a1 (Update README.md)
 
 ````markdown
 # 📝 Django Blog Creation API
