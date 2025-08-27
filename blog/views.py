@@ -68,7 +68,7 @@ def correct_grammar(text):
         if part.strip() == "" or part.startswith("\n"):
             corrected.append(part)
         else:
-            input_text = "grammar: " + part.strip()
+            input_text = part.strip()
             inputs = tokenizer.encode(input_text, return_tensors="pt")
             outputs = model.generate(inputs, max_length=128, num_beams=5)
             corrected_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
