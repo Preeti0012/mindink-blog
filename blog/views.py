@@ -8,7 +8,6 @@ import re
 
 # NEW: Import Hugging Face transformers
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-import torch
 
 # Load model and tokenizer once when server starts
 tokenizer = AutoTokenizer.from_pretrained("prithivida/grammar_error_correcter_v1")
